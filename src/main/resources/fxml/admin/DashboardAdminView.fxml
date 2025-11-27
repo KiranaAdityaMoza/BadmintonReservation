@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.badminton.app.badmintonreservation.controller.admin.DashboardAdminController"
+            prefWidth="800" prefHeight="600">
+
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20">
+            <Label text="Dashboard Admin" style="-fx-font-size:18px; -fx-font-weight:bold;" />
+
+            <HBox spacing="20">
+                <Button text="Kelola Lapangan" fx:id="btnManageLapangan" />
+                <Button text="Kelola Reservasi" fx:id="btnManageReservasi" />
+                <Button text="Lihat Request User" fx:id="btnViewRequest" />
+                <Button text="Lihat &amp; Hapus User" fx:id="btnManageUser" />
+                <Button text="Logout" fx:id="btnLogout" />
+            </HBox>
+
+            <Label text="Statistik:" style="-fx-font-weight:bold;" />
+            <GridPane hgap="20" vgap="10">
+                <Label text="Total Lapangan:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Label fx:id="lblTotalLapangan" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                
+                <Label text="Total User:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Label fx:id="lblTotalUser" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                
+                <Label text="Total Reservasi Hari Ini:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Label fx:id="lblTotalReservasi" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                
+                <Label text="Total Request Pending:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <Label fx:id="lblTotalRequestPending" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            </GridPane>
+
+            <Label text="Reservasi Terbaru:" style="-fx-font-weight:bold;" />
+            <TableView fx:id="tblRecentReservasi" prefHeight="200">
+    <columns>
+        <TableColumn text="ID" fx:id="colId" />
+        <TableColumn text="User ID" fx:id="colUserId" />
+        <TableColumn text="Lapangan ID" fx:id="colLapanganId" />
+        <TableColumn text="Tanggal" fx:id="colTanggal" />
+        <TableColumn text="Jam Mulai" fx:id="colJamMulai" />
+        <TableColumn text="Jam Selesai" fx:id="colJamSelesai" />
+        <TableColumn text="Total Harga" fx:id="colTotalHarga" />
+        <TableColumn text="Status" fx:id="colStatus" />
+        <TableColumn text="Dibuat Pada" fx:id="colCreatedAt" />
+    </columns>
+</TableView>
+
+
+        </VBox>
+    </children>
+</AnchorPane>

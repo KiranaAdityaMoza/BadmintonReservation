@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.badminton.app.badmintonreservation.controller.admin.KelolaReservasiController">
+
+    <top>
+        <HBox spacing="10" style="-fx-padding: 10;">
+            <Button fx:id="btnEdit" text="Edit Status"/>
+            <Button fx:id="btnBack" text="Kembali" />
+            <Button fx:id="btnHapus" text="Hapus"/>
+        </HBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tblReservasi" prefWidth="800" prefHeight="400">
+            <columns>
+                <TableColumn fx:id="colId" text="ID"/>
+                <TableColumn fx:id="colUserId" text="User ID"/>
+                <TableColumn fx:id="colLapanganId" text="Lapangan ID"/>
+                <TableColumn fx:id="colTanggal" text="Tanggal"/>
+                <TableColumn fx:id="colJamMulai" text="Jam Mulai"/>
+                <TableColumn fx:id="colJamSelesai" text="Jam Selesai"/>
+                <TableColumn fx:id="colTotalHarga" text="Total Harga"/>
+                <TableColumn fx:id="colStatus" text="Status"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

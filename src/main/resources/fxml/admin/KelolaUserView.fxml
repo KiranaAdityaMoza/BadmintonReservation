@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" 
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.badminton.app.badmintonreservation.controller.admin.KelolaUserController">
+
+    <!-- TABEL USER -->
+    <center>
+        <TableView fx:id="tableUser" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colUsername" text="Username" prefWidth="150"/>
+                <TableColumn fx:id="colNama" text="Nama Lengkap" prefWidth="200"/>
+                <TableColumn fx:id="colRole" text="Role" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- FORM EDIT -->
+    <right>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <Label text="Edit User" style="-fx-font-size: 18;"/>
+
+            <TextField fx:id="txtNama" promptText="Nama Lengkap"/>
+            <ComboBox fx:id="comboRole"/>
+
+            <Button fx:id="btnResetPassword" text="Reset Password"/>
+            <Button fx:id="btnSave" text="Simpan Perubahan"/>
+            <Button fx:id="btnDelete" text="Hapus User"/>
+
+            <Separator/>
+            <Button fx:id="btnBack" text="Kembali ke Dashboard"/>
+        </VBox>
+    </right>
+
+</BorderPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.badminton.app.badmintonreservation.controller.LoginController">
+    <children>
+        <VBox spacing="10" layoutX="50" layoutY="50">
+            <Label text="Login / Register" style="-fx-font-size:16px; -fx-font-weight:bold;" />
+
+            <!-- Input Fields -->
+            <TextField fx:id="txtUsername" promptText="Username" />
+            <PasswordField fx:id="txtPassword" promptText="Password" />
+            <TextField fx:id="txtNamaLengkap" promptText="Nama Lengkap" />
+            <ComboBox fx:id="cbRole" promptText="Pilih Role" />
+
+            <!-- Buttons -->
+            <Button text="Login" fx:id="btnLogin" />
+            <Button text="Register" fx:id="btnRegister" />
+
+            <!-- Feedback Label -->
+            <Label fx:id="lblMessage" style="-fx-text-fill:red;" />
+        </VBox>
+    </children>
+</AnchorPane>

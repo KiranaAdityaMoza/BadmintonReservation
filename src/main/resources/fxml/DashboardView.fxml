@@ -1,0 +1,34 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.badminton.app.badmintonreservation.controller.DashboardController">
+
+     HEADER 
+    <top>
+        <HBox spacing="10" style="-fx-background-color:#2e8b57; -fx-padding:15;">
+            <Label text="Dashboard" style="-fx-font-size:22px; -fx-text-fill:white; -fx-font-weight:bold;" />
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" fx:id="btnLogout"/>
+        </HBox>
+    </top>
+
+     MENU SAMPING 
+    <left>
+        <VBox spacing="10" style="-fx-padding:15;">
+            <Button text="Pemesanan" fx:id="btnReservasi"/>
+            <Button text="Jadwal Lapangan" fx:id="btnRequestPerubahan"/>
+            <Button text="Riwayat" fx:id="btnRiwayat"/>
+        </VBox>
+    </left>
+
+     KONTEN UTAMA 
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-padding:20;">
+            <Label text="Selamat datang di Dashboard!" style="-fx-font-size:18px;"/>
+        </StackPane>
+    </center>
+
+</BorderPane>-->

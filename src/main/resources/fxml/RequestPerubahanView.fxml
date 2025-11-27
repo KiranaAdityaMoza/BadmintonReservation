@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.badmintonapp.badmintonreservation.controller.RequestPerubahanController">
+<children>
+<VBox spacing="10" layoutX="50" layoutY="30">
+<Label text="Request Perubahan" />
+<TextField fx:id="idReservasiField" promptText="ID Reservasi" />
+<TextField fx:id="jenisField" promptText="Jenis Perubahan" />
+<DatePicker fx:id="tanggalBaruPicker" />
+<TextField fx:id="jamMulaiBaruField" promptText="Jam Mulai Baru" />
+<TextField fx:id="jamSelesaiBaruField" promptText="Jam Selesai Baru" />
+<TextField fx:id="alasanField" promptText="Alasan" />
+<Button fx:id="btnKirim" text="Kirim Request" />
+</VBox>
+</children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.badminton.app.badmintonreservation.controller.admin.KelolaLapanganController">
+
+    <!-- Top HBox untuk tombol -->
+    <top>
+        <HBox fx:id="topHBox" spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button fx:id="btnTambah" text="Tambah Lapangan"/>
+            <Button fx:id="btnEdit" text="Edit Lapangan"/>
+            <Button fx:id="btnHapus" text="Hapus Lapangan"/>
+            <Button fx:id="btnBack" text="Kembali"/>
+        </HBox>
+    </top>
+
+    <!-- Center TableView -->
+    <center>
+        <TableView fx:id="tblLapangan" prefHeight="400" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colNama" text="Nama Lapangan" prefWidth="150"/>
+                <TableColumn fx:id="colHarga" text="Harga/Jam" prefWidth="100"/>
+                <TableColumn fx:id="colStatus" text="Status" prefWidth="100"/>
+                <TableColumn fx:id="colCreatedAt" text="Created At" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

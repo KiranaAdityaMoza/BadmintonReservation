@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.badmintonapp.badmintonreservation.controller.AdminController">
+<children>
+<VBox spacing="10" layoutX="40" layoutY="30">
+<Label text="Admin Panel" />
+<TableView fx:id="tableRequest">
+<columns>
+<TableColumn text="ID" />
+<TableColumn text="User" />
+<TableColumn text="Jenis" />
+<TableColumn text="Tanggal Baru" />
+<TableColumn text="Status" />
+</columns>
+</TableView>
+<HBox spacing="10">
+<Button text="Approve" fx:id="btnApprove" />
+<Button text="Reject" fx:id="btnReject" />
+</HBox>
+</VBox>
+</children>
+</AnchorPane>

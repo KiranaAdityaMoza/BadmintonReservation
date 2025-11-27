@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.badmintonapp.badmintonreservation.controller.ReservasiController">
+<children>
+<VBox spacing="10" layoutX="50" layoutY="30">
+<Label text="Form Reservasi" />
+<DatePicker fx:id="tanggalPicker" />
+<TextField fx:id="jamMulaiField" promptText="Jam Mulai (HH:MM)" />
+<TextField fx:id="jamSelesaiField" promptText="Jam Selesai (HH:MM)" />
+<Button text="Submit" fx:id="btnSubmit" />
+</VBox>
+</children>
+</AnchorPane>
